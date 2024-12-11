@@ -1,0 +1,14 @@
+/* DropdownStyles.css */
+
+/* Stil za Select komponentu */
+.ant-select {
+    width: 90%;          /* Postavljena širina */
+    font-size: 12px;     /* Manja veličina fonta */
+  }
+  
+  /* Stil za placeholder tekst unutar Select komponente */
+  .ant-select-selection-placeholder {
+    font-size: 12px;     /* Manja veličina fonta za placeholder */
+    color: #bfbfbf;      /* Boja placeholder teksta */
+  }
+  

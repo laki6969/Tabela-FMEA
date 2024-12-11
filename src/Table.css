@@ -1,0 +1,115 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Omogući horizontalni klizač */
+    white-space: nowrap; /* Sprečava sabijanje sadržaja u redovima */
+}
+
+.excel-table {
+    width: auto; /* Omogući tabeli da bude širine svojih sadržaja */
+    min-width: 100%; /* Sprečava sabijanje tabele ispod veličine containera */
+    border-collapse: collapse;
+    border: 1px solid #cccbcb;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    table-layout: auto; /* Omogući automatsko prilagođavanje širine kolona */
+}
+
+.excel-table th,
+.excel-table td {
+    border: 1px solid #cccbcb;
+    padding: 8px 16px; /* Povećajte padding za više razmaka */
+    text-align: center;
+    vertical-align: middle; /* Centriranje sadržaja po vertikali */
+    min-width: 150px; /* Povećaj minimalnu širinu */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px; /* Dodajte minimalnu visinu za proširenje */
+    box-sizing: border-box; /* Osigurajte da padding i border ne utiču na veličinu */
+    min-height: 60px; /* Početna minimalna visina */
+}
+
+/* Header styling (A, B, C, etc.) */
+.excel-table th {
+    background-color: #f2f2f2; /* Svetlija siva pozadina za zaglavlje */
+    font-weight: 600; /* Postavi semi-bold umesto bold */
+    color: #4a4a4a;
+    border: 1px solid #cccccc; /* Tanji sivi border za zaglavlje */
+    font-size: 12px; /* Smanjena veličina fonta */
+}
+
+/* Row number column styling */
+.excel-table td:first-child {
+    background-color: #f4f6f8;
+    font-weight: 600; /* Postavi semi-bold umesto bold */
+    color: #4a4a4a;
+    font-size: 12px; /* Smanjena veličina fonta za brojeve */
+}
+
+/* General cell styling */
+.excel-table td {
+    background-color: #ffffff;
+    padding: 0; /* Uklonjen padding */
+    font-size: 12px; /* Smanjena veličina fonta u ćelijama */
+}
+
+/* Cell focus styling */
+.excel-table td:focus-within {
+    outline: none;
+    border: 2px solid #4a90e2;
+}
+
+/* Styling for textarea in table cells */
+.excel-table textarea {
+    width: 100%;
+    height: auto;
+    border: none;
+    font-size: 12px;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin: 0;
+    resize: none;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    display: block;
+    min-height: 60px; /* Početna minimalna visina */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
+.excel-table textarea:focus {
+    outline: none;
+    background-color: #eaf1fb;
+}
+
+/* Styling for the filter icon */
+.filter-icon {
+    background: #fff; /* Bela pozadina kao u antd */
+    border: 1px solid #d9d9d9; /* Svetlosivi okvir u stilu antd */
+    color: #a2a0a0; /* Tamnosiva boja za ikonicu */
+    cursor: pointer;
+    font-size: 16px; /* Podesi veličinu ikonice */
+    margin-left: 8px; /* Razmak između tekstualnog dela i ikonice */
+    padding: 4px 6px; /* Dodaj padding za bolje pozicioniranje */
+    border-radius: 4px; /* Blago zaobljeni uglovi za moderniji izgled */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.2s; /* Glatke tranzicije */
+    align-items: center; /* Centriraj ikonicu vertikalno */
+    font-size: 10px; /* Smanjena veličina ikonice */
+}
+
+.filter-icon:hover {
+    background-color: #e6f7ff; /* Svetloplavi hover efekat */
+    color: #007bff; /* Promeni boju ikonice na hover */
+    transform: scale(1.1); /* Blago povećaj ikonicu na hover */
+}
+
+.filter-icon:focus {
+    outline: none; /* Ukloni outline prilikom fokusa */
+}
+
+.excel-table td:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,113 @@
+/* Container for the filter menu */
+.filter-menu {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column; /* Fleksibilan raspored u kolonama */
+}
+
+/* Header of the filter menu */
+.filter-header {
+    padding: 10px;
+    border-bottom: 1px solid #d0d0d0;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+/* Options container to make it scrollable */
+.filter-options-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 60px; /* Dodatni prostor ispod za dugmad */
+}
+
+/* Options within the filter menu */
+.filter-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #d0d0d0;
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+.filter-option:hover {
+    background-color: #f1f1f1;
+}
+
+.filter-option i {
+    margin-right: 8px;
+}
+
+.filter-option.disabled {
+    color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+.filter-separator {
+    border-top: 1px solid #d0d0d0;
+    margin: 10px 0;
+}
+
+/* Fixed position for the actions section with buttons */
+.filter-actions {
+    position: sticky;
+    bottom: 0; /* Fiksira dugmad na dnu */
+    background-color: #ffffff;
+    padding: 10px;
+    border-top: 1px solid #d0d0d0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Razmak između dugmića */
+}
+
+.filter-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    text-align: center;
+}
+
+.filter-actions button:hover {
+    background-color: #0056b3;
+}
+
+.filter-actions button:disabled {
+    background-color: #d0d0d0;
+    cursor: not-allowed;
+}
+
+/* Aktivna opcija u meniju */
+.filter-option.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Checkbox alignment */
+.filter-option input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Left align all elements inside filter menu */
+.filter-menu * {
+    text-align: left;
+    justify-content: flex-start;
+}

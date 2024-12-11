@@ -1,0 +1,30 @@
+/* src/components/atomic/ButtonDelete/ButtonDelete.css */
+.button-delete {
+  background-color: inherit;
+  border: none;
+  color: #FF1744;;
+  padding: 6px 12px; /* Smanjen padding za manji dugmić */
+  font-size: 12px; /* Smanjena veličina fonta */
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /* Centriraj dugmić horizontalno */
+  align-items: center; /* Centriraj dugmić vertikalno */
+  gap: 5px;
+  border-radius: 4px; /* Zaobljeni uglovi za moderniji izgled */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Glatke tranzicije */
+  
+}
+  
+  .button-delete:hover {
+    transform: scale(1.05); /* Blago povećanje na hover */
+  }
+  
+  .button-delete:disabled {
+    cursor: not-allowed;
+  }
+  
+  .button-delete i {
+    margin-right: 5px;
+    font-size: 14px; /* Veličina ikonice */
+  }
+  

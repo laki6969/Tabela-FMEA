@@ -1,0 +1,8 @@
+.button-container {
+    display: flex;
+    gap: 15px; /* Razmak između dugmadi */
+    flex-direction: row; /* Postavi dugmad u red, ne vertikalno */
+    justify-content: flex-start; /* Poravnanje dugmadi levo */
+    margin-bottom: 20px; /* Razmak ispod dugmadi prema ostatku sadržaja */
+    align-items: center; /* Centriraj dugmad vertikalno unutar kontejnera */
+}

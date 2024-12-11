@@ -1,0 +1,39 @@
+.button-save {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blaga senka */
+    width: 120px; /* Smanjena širina */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .button-save i {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  .button-save:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Blagi pomak prema gore na hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Pojačana senka na hover */
+  }
+  
+  .button-save:active {
+    transform: translateY(1px); /* Pritisak prema dole na klik */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); /* Manja senka na klik */
+  }
+  
+  .button-save:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed;
+  }
+  
